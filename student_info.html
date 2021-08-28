@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel ="stylesheet" href="css/bootstrap.min.css">
+    
+
+    <title>Admin Dashboard</title>
+  </head>
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <center><img src ="assets/img/school_logo.jpg"  height="100">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">School name</a>
+      </center>
+      <ul class="navbar-nav px-3">
+      <li class="nav-item">
+                <div class ="row">
+                 <div class ="col">
+                <img src="assets/img/profile_pic.jpg" height="50" width="50">
+                </div>
+                 <div class ="col">
+                 <ul class="nav flex-column">
+                  <li class="nav-item " style="color:white" >
+                    Username(admin)
+                  </li>
+                  <li class="nav-item">
+                    <div class="btn-group mr-2">
+                <button class="btn btn-sm btn-outline-light" >Profile</button>
+                <button class="btn btn-sm btn-outline-light">password</button>
+              </div>
+
+                 
+
+
+                  </ul>
+                </div>
+                
+                </div>
+               
+              </li>
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+            
+                </li>
+                  <li class="nav-item">
+                  <br><br>
+                  <form class="form-inline md-form form-sm mt-0">
+                      <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                       <i class="fas fa-search" aria-hidden="true"></i>
+                   </form>
+                  </li>  
+
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="collapse" href="admin_dashboard.html" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="database_backup.html" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  Database Backups
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="student_info.html" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                   Students Information 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="teachers_info.html" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  Teachers Information
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="parents_info.html" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                  Parents Infromation
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="school_info.html" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  School Information
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>School Managements</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item dropdown">
+              
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                  Students Management
+                </a>
+                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownsm">
+                      <li><a class="dropdown-item" href="#">Student Admission</a></li>
+                      <li><a class="dropdown-item" href="#">Student Promotion</a></li>
+                 </ul>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                  Teachers Management
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                  Class Management
+                </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                  Exams Managements
+                </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                  Fees Managements
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <br>
+         <div class = "float-right">
+          <a class="btn btn-light position-relative">
+            <img src="assets/icons/envelope.svg" alt="Bootstrap" width="20" height="20">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </a>
+          &nbsp;&nbsp;&nbsp; 
+          <a class="btn btn-light position-relative">
+            <img src="assets/icons/bell.svg" alt="Bootstrap" width="20" height="20">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </a>
+          &nbsp;&nbsp;&nbsp; 
+          <a  class="btn btn-light position-relative">
+            <img src="assets/icons/calendar-fill.svg" alt="Bootstrap" width="20" height="20">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              1-8-2021
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </a>
+          &nbsp;&nbsp;&nbsp;  &nbsp;
+          <a class="btn btn-light position-relative" href="database_backup.html" >
+            <img src="assets/icons/chevron-double-right.svg" alt="Bootstrap" width="20" height="20">
+            
+           
+          </a>
+        </div>
+          <br><br>
+          
+          <div class="container-fluid " style="background-color:orange "  >
+          
+            <center><h5 style="color: white;">Student Information</h4></center>
+              
+        </div>
+        <br>
+        <div class="card" style ="border-color: blue;">
+          <div class="card-header bg-primary text-white" >
+             <div class= "float-left">
+               <img src = "assets/icons/users.svg" width="15" height="15">
+               Student Information 
+             </div>
+             <div class ="float-right">
+              <img src = "assets/icons/tags.svg" width="15" height="15">
+              class(6B)
+             </div>
+            
+          </div>
+          <div class="card-body">
+            <center>
+              <form>
+                <div class="input-group  w-25">
+                  <span><img src = "assets/icons/tags.svg" width="15" height="15">    </span> 
+            &nbsp;
+                  <select class="form-control" id="exampleFormControlSelect1">
+                      
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+
+                
+                  <button type="submit" class="btn-primary">Get Class Students</button>
+                  
+               
+                </div>               
+        
+              </form>
+            </center>
+            
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">All Students</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Section
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            <br>
+            
+              <form class="w-5 float-left">
+                <div class="input-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                      
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                  <a type="button" id="exampleFormControlSelect1" role="button">
+                    <img src ="assets/icons/arrow-bar-down.svg"> : per page
+                  </a>
+                </div>
+                
+              </form>
+           
+              <div class="float-right">
+                <form >
+                  <input type="text">
+               </form>
+              </div>
+              <div class ="float-right ">
+                
+                <a href="#">print</a>&nbsp; &nbsp;&nbsp;
+                
+                Search:
+                
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID_no</th>
+                    <th scope="col-2">Student Photo</th>
+                    <th scope="col-2">Student Full Name</th>
+                    <th scope="col-4"> Address</th>
+                    <th scope="col-2"> Parents Name</th>
+                    <th scope="col"> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" ><img src ="assets/img/student1.jfif" class="rounded-circle" alt="Cinque Terre" width =75 height =75></a></td>
+                    <td>Sarah Cameron</td>
+                    <td>OBX kook street</td>
+                    <td>Ward Cameron</td>
+                    <td> <div class="btn-group mr-2">
+                      <a type ="button" class="btn btn-sm btn-primary" href="#" role="button"> <img src="assets/icons/eye.svg"></a>&nbsp;
+                      <a type ="button" class="btn btn-sm btn-warning" href="#" role="button"> <img src="assets/icons/edit.svg"></a>&nbsp;
+                      <a  type ="button" class="btn btn-sm btn-danger" href="#" role="button" > <img src="assets/icons/trash.svg"></a>
+                      
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" ><img src ="assets/img/student1.jfif" class="rounded-circle" alt="Cinque Terre" width =75 height =75></a></td>
+                    <td>Sarah Cameron</td>
+                    <td>OBX kook street</td>
+                    <td>Ward Cameron</td>
+                    <td> <div class="btn-group mr-2">
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#viewprofilepic"> <img src="assets/icons/eye.svg"></button>&nbsp;
+                      <a type ="button" class="btn btn-sm btn-warning" href="#" role="button"> <img src="assets/icons/edit.svg"></a>&nbsp;
+                      <a  type ="button" class="btn btn-sm btn-danger" href="#" role="button" > <img src="assets/icons/trash.svg"></a>
+                      
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" ><img src ="assets/img/student1.jfif" class="rounded-circle" alt="Cinque Terre" width =75 height =75></a></td>
+                    <td>Sarah Cameron</td>
+                    <td>OBX kook street</td>
+                    <td>Ward Cameron</td>
+                    <td> <div class="btn-group mr-2">
+                      <a type ="button" class="btn btn-sm btn-primary" href="#" role="button"> <img src="assets/icons/eye.svg"></a>&nbsp;
+                      <a type ="button" class="btn btn-sm btn-warning" href="#" role="button"> <img src="assets/icons/edit.svg"></a>&nbsp;
+                      <a  type ="button" class="btn btn-sm btn-danger" href="#" role="button" > <img src="assets/icons/trash.svg"></a>
+                      
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" ><img src ="assets/img/student1.jfif" class="rounded-circle" alt="Cinque Terre" width =75 height =75></a></td>
+                    <td>Sarah Cameron</td>
+                    <td>OBX kook street</td>
+                    <td>Ward Cameron</td>
+                    <td> <div class="btn-group mr-2">
+                      <a type ="button" class="btn btn-sm btn-primary" href="#" role="button"> <img src="assets/icons/eye.svg"></a>&nbsp;
+                      <a type ="button" class="btn btn-sm btn-warning" href="#" role="button"> <img src="assets/icons/edit.svg"></a>&nbsp;
+                      <a  type ="button" class="btn btn-sm btn-danger" href="#" role="button" > <img src="assets/icons/trash.svg"></a>
+                      
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" ><img src ="assets/img/student1.jfif" class="rounded-circle" alt="Cinque Terre" width =75 height =75></a></td>
+                    <td>Sarah Cameron</td>
+                    <td>OBX kook street</td>
+                    <td>Ward Cameron</td>
+                    <td> <div class="btn-group mr-2">
+                      <a type ="button" class="btn btn-sm btn-primary" href="#" role="button"> <img src="assets/icons/eye.svg"></a>&nbsp;
+                      <a type ="button" class="btn btn-sm btn-warning" href="#" role="button"> <img src="assets/icons/edit.svg"></a>&nbsp;
+                      <a  type ="button" class="btn btn-sm btn-danger" href="#" role="button" > <img src="assets/icons/trash.svg"></a>
+                      
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" ><img src ="assets/img/student1.jfif" class="rounded-circle" alt="Cinque Terre" width =75 height =75></a></td>
+                    <td>Sarah Cameron</td>
+                    <td>OBX kook street</td>
+                    <td>Ward Cameron</td>
+                    <td> <div class="btn-group mr-2">
+                      <a type ="button" class="btn btn-sm btn-primary" href="#" role="button"> <img src="assets/icons/eye.svg"></a>&nbsp;
+                      <a type ="button" class="btn btn-sm btn-warning" href="#" role="button"> <img src="assets/icons/edit.svg"></a>&nbsp;
+                      <a  type ="button" class="btn btn-sm btn-danger" href="#" role="button" > <img src="assets/icons/trash.svg"></a>
+                      
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </table>
+            <!-- Modal -->
+<div class="modal fade" id="viewprofilepic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+       
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+    </script>
+  
+
+</body>
+</html>
